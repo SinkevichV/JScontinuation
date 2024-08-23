@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="content">
+
+    </div>
+    <script src="data.js"></script>
+    <script>
+        const contentEl = document.querySelector('.content');
+        const data = JSON.parse(dataInfo);
+        data.forEach(element => {
+            element.results.forEach(element => {
+                const humanBox = document.createElement('div');
+                humanBox.classList.add('human');
+                const h2El = document.createElement('h2'); 
+                h2El.classList.add('human__title');
+                h2El.textContent = `${element.name.title} ${element.name.first} ${element.name.last}`;
+                console.log(element.name);   
+                
+                const pEl = document.createElement('p'); 
+                pEl.classList.add('human__loc');
+                pEl.textContent = `Страна: ${element.location.country}, Штат: ${element.location.state}, Город: ${element.location.city}`;
+
+                const imgEl = document.createElement('img');
+                imgEl.classList.add('human__img');
+                imgEl.src = element.picture.large;
+
+                contentEl.appendChild(humanBox);
+                humanBox.appendChild(h2El);
+                humanBox.appendChild(imgEl);
+                humanBox.appendChild(pEl);
+            
+                console.log(element.location); 
+
+                
+            
+            })});
+    </script>
+</body>
+</html>

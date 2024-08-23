@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 35px;
+}
+
+.human {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.human__img{
+    border: 1px solid black;
+    
+}
