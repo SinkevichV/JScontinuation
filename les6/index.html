@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fetured_items">
+      <article class="title_fetured_itemas">
+        <h3 class="title_fetured_text">Fetured Items</h3>
+        <p class="subtitle_fetured_text">
+          Shop for items based on what we featured in this week
+        </p>
+      </article>
+      <div class="block_items">
+        <!-- <section class="item first">
+          <figure>
+            <img src="img/item1.svg" alt="item1" />
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section>
+        <section class="item second">
+          <figure>
+            <div class="img_item3">
+              <img src="img/item2.svg" alt="item2" />
+            </div>
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section>
+        <section class="item third">
+          <figure>
+            <img src="img/item3.svg" alt="item3" />
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section>
+        <section class="item fourth">
+          <figure>
+            <img src="img/item4.svg" alt="item4" />
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section>
+        <section class="item fifth">
+          <figure>
+            <img src="img/item5.svg" alt="item5" />
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section>
+        <section class="item sixth">
+          <figure>
+            <img src="img/item6.svg" alt="item6" />
+            <div class="description">
+              <h4 class="title_description">ELLERY X M'O CAPSULE</h4>
+              <p class="text_description">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="price">$52.00</p>
+            </div>
+          </figure>
+        </section> -->
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script>
+      const data = JSON.parse(dataItems);
+      const blockItems = document.querySelector(".block_items");
+
+      data.forEach(element => {
+        const itemEl = document.createElement("div");
+        itemEl.classList.add("item");
+
+        const itemImg = document.createElement("img");
+        itemImg.src = element.img;
+
+        const itemTitle = document.createElement("p");
+        itemTitle.classList.add("title");
+        itemTitle.textContent = element.name;
+
+        const itemDescription = document.createElement("p");
+        itemDescription.classList.add("description");
+        itemDescription.textContent = element.description;
+
+        const itemPrice = document.createElement("p");
+        itemPrice.classList.add("price");
+        itemPrice.textContent = `$ ${element.price}`;
+
+        blockItems.appendChild(itemEl);
+        itemEl.appendChild(itemImg);
+        itemEl.appendChild(itemTitle);
+        itemEl.appendChild(itemDescription);
+        itemEl.appendChild(itemPrice);
+        
+      });
+
+    </script>
+  </body>
+</html>
