@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fetured_items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 50px;
+}
+
+.title_fetured_itemas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_fetured_text {
+  color: #222;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle_fetured_text {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 48px;
+}
+
+.block_items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px 250px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  max-width: 360px;
+}
+
+.title {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.6px;
+  text-align: left;
+  padding: 10px;
+}
+
+.description {
+  color: #5d5d5d;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  padding: 10px;
+}
+
+.price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+}
+
+.select {
+  filter: brightness(40%);
+}
+
+.buttonAdd {
+  display: none;
+  position: absolute;
+  margin: 33.3% 0% 75% 25%;
+  border: rgba(255, 255, 255, 1) solid 1px;
+  width: 139px;
+  height: 44px;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  font: lato;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color:rgba(255, 255, 255, 1);
+}
+
+.cart_items {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.item_cart {
+  border: black solid 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 652px;
+  height: 306px;
+  
+}
+
+.cart_info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin: 10px;
+}
+
+.img_cart {
+  max-height: 306px;
+}
+.close {
+  display: block;
+  margin: 10px;
+}
+
+
+
+
+
